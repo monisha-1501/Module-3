@@ -14,7 +14,18 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+ ```
+import re
+l1 = []
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+
+for i in items:
+    if not re.search(r"e", i):
+        l1.append(i)
+print(l1)
+```
 ## Output
+<img width="1262" height="442" alt="{68C34189-4125-470D-A0DB-3C8A25B40F16}" src="https://github.com/user-attachments/assets/377d62a9-382f-4444-9744-58172ab52d4c" />
 
 ## Result
+The program successfully filters out words containing the letter 'e' and prints the remaining words in the list.
